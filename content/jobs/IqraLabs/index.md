@@ -3,8 +3,8 @@ date: '2015-12-21'
 title: 'Lead Frontend Engineer'
 company: 'IqraLabs'
 location: 'Remote'
-range: 'January - December 2015'
-url: 'https://us.mullenlowe.com/'
+range: '2022 - Continue'
+url: ''
 ---
 
 Advanced CCTV surveillance solution provided to PORT Management to
