@@ -1,11 +1,11 @@
 {
-  "name": "v4",
-  "description": "Personal Website V4",
+  "name": "v1",
+  "description": "Personal Profile V1",
   "version": "1.0.0",
-  "author": "Brittany Chiang <brittany.chiang@gmail.com>",
+  "author": "Hamza Iqbal <hi.hamza.dev@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bchiang7/v4"
+    "url": "https://github.com/im-hamza-dev/digital-profile"
   },
   "keywords": [
     "gatsby"
