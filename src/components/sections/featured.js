@@ -160,7 +160,9 @@ const StyledProject = styled.li`
     background-color: var(--light-navy);
     color: var(--light-slate);
     font-size: var(--fz-lg);
-
+    b {
+      color: var(--green);
+    }
     @media (max-width: 768px) {
       padding: 20px 0;
       background-color: transparent;
@@ -283,8 +285,8 @@ const StyledProject = styled.li`
         bottom: 0;
         z-index: 3;
         transition: var(--transition);
-        background-color: var(--navy);
-        mix-blend-mode: screen;
+        // background-color: var(--navy);
+        // mix-blend-mode: screen;
       }
     }
 

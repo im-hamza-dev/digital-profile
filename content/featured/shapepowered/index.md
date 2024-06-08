@@ -1,16 +1,20 @@
 ---
 date: '3'
-title: 'Build a Spotify Connected App'
+title: 'Shape'
 cover: './course-card.png'
-external: 'https://www.newline.co/courses/build-a-spotify-connected-app'
-cta: 'https://www.newline.co/courses/build-a-spotify-connected-app'
+external: 'https://shapepowered.com'
+cta: 'https://shapepowered.com'
 tech:
-  - React
-  - Express
-  - Spotify API
-  - Styled Components
+  - Gatsby
+  - GraphQL
+  - SCSS
+  - Contentful
+  - Gsap
 ---
 
-Having struggled with understanding how the Spotify OAuth flow works, I made the course I wish I could have had.
+<b>Deliver Corporate website using Gatsby integrated with Contentful.</b>
 
-Unlike tutorials that only cover a few concepts and leave you with half-baked GitHub repositories, this course covers everything from explaining the principles of REST APIs to implementing Spotify's OAuth flow and fetching API data in a React app. By the end of the course, you’ll have an app deployed to the internet you can add to your portfolio.
+Optimized website performance by reducing page load time by <b>30%</b>. Achieved website page speed insights score of <b>90+</b>
+Implemented scalable solutions and interfaces to ensure best user experience
+across major browsers, including Chrome, Firefox, Safari, and Edge, across 11+
+versions.
