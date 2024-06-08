@@ -127,12 +127,12 @@ const About = () => {
 
   const skills = [
     'JavaScript (ES6+)',
-    'TypeScript',
-    'React',
-    'Angular',
     'Node.js',
+    'TypeScript',
     'Express',
+    'React',
     'MongoDB',
+    'Angular',
   ];
 
   return (
