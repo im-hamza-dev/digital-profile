@@ -1,14 +1,15 @@
 ---
-date: '2020-03-27'
-title: 'Integrating Algolia Search with WordPress Multisite'
+date: '2022-06-03'
+title: 'NoodleFactory'
 github: ''
-external: 'https://medium.com/stories-from-upstatement/integrating-algolia-search-with-wordpress-multisite-e2dea3ed449c'
+external: 'https://www.noodlefactory.ai/'
 tech:
-  - Algolia
-  - WordPress
-  - PHP
-company: 'Upstatement'
+  - Gatsby
+  - scss
+  - GraphQL
+  - Javascript
+company: 'Upwork'
 showInProjects: true
 ---
 
-Building a custom multisite compatible WordPress plugin to build global search with Algolia
+Building a dynamic Gatsby website sourcing its content from wordpress via GraphQL. Implemented Headless CMS Approach to provide the solution

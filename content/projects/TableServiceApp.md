@@ -1,14 +1,17 @@
 ---
-date: '2020-03-27'
-title: 'Integrating Algolia Search with WordPress Multisite'
+date: '2022-05-23'
+title: 'Table Service ( Take Orders )'
 github: ''
-external: 'https://medium.com/stories-from-upstatement/integrating-algolia-search-with-wordpress-multisite-e2dea3ed449c'
+external: 'https://www.takeordershq.com/'
 tech:
-  - Algolia
+  - Gatsby
   - WordPress
-  - PHP
-company: 'Upstatement'
+  - Javacript
+  - Scss
+  - GraphQL
+  - Headless CMS
+company: 'Upwork'
 showInProjects: true
 ---
 
-Building a custom multisite compatible WordPress plugin to build global search with Algolia
+Shipped a Headless CMS Website integrated Gatsby and Wordpress using GraphQL. Approach is to create a website one time and managed the website content/pages afterwards using Content Management System
