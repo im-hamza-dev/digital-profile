@@ -12,6 +12,6 @@ tech:
   - Socket.io
 ---
 
-Space Planning Tool for Dock & Fabrication on Port Premises
+<b>Space Planning Tool for Dock & Fabrication on Port Premises</b>
 
-Shippeds a comprehensive tool for space planning within dock and fabrication areas, facilitating efficient management and optimization of available space.
+Shipped a comprehensive tool for space planning within dock and fabrication areas, facilitating efficient management and optimization of available space.

@@ -1,14 +1,14 @@
 module.exports = {
-  email: 'brittany.chiang@gmail.com',
+  email: 'hi.hamza.dev@gmail.com',
 
   socialMedia: [
     {
       name: 'GitHub',
-      url: 'https://github.com/bchiang7',
+      url: 'https://github.com/im-hamza-dev',
     },
     {
       name: 'Instagram',
-      url: 'https://www.instagram.com/bchiang7',
+      url: 'https://www.instagram.com/iamhamzaiqbal',
     },
     {
       name: 'Twitter',
@@ -16,7 +16,7 @@ module.exports = {
     },
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/bchiang7',
+      url: 'https://www.linkedin.com/in/iamhamzaiqbal',
     },
     {
       name: 'Codepen',
