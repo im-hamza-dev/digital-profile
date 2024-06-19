@@ -1,7 +1,7 @@
 ---
 date: '2022-05-23'
 title: 'Table Service ( Take Orders )'
-github: ''
+github: 'https://github.com/im-hamza-dev/table-service'
 external: 'https://www.takeordershq.com/'
 tech:
   - Gatsby
