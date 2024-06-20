@@ -154,7 +154,7 @@ const About = () => {
             <p>
               Today, I’ve had the privilege of working for{' '}
               <a href="https://shapepowered.com/">SHAPE</a> ( featured article in Forbes360 ),{' '}
-              <a href="/">a start-up</a>, and{' '}
+              <a href="https://www.iqralabs.com/">a start-up</a>, and{' '}
               <a href="https://www.aerodyne.group/">a huge corporation</a>, My main focus these days
               is building digital experiences at <a href="https://www.aerodyne.group/">Aerodyne</a>{' '}
               for a variety of clients.
