@@ -1,8 +1,8 @@
 ---
 date: '2020-03-27'
 title: 'Connect'
-github: ''
-external: 'https://medium.com/stories-from-upstatement/integrating-algolia-search-with-wordpress-multisite-e2dea3ed449c'
+github: 'https://github.com/im-hamza-dev/connect'
+external: ''
 tech:
   - React
   - Node

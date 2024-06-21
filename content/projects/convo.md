@@ -1,8 +1,8 @@
 ---
 date: '2020-03-27'
 title: 'Convo'
-github: ''
-external: 'https://medium.com/stories-from-upstatement/integrating-algolia-search-with-wordpress-multisite-e2dea3ed449c'
+github: 'https://github.com/im-hamza-dev/convo'
+external: ''
 tech:
   - React
   - Node
@@ -10,7 +10,7 @@ tech:
   - MongoDB
   - Socket.io
 company: 'Personal'
-showInProjects: false
+showInProjects: true
 ---
 
 Build a chat application with modern User Experience and integration AI features very soon...
