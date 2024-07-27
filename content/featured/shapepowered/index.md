@@ -3,7 +3,7 @@ date: '3'
 title: 'Shape'
 cover: './course-card.png'
 external: 'https://shapepowered.com'
-cta: 'https://shapepowered.com'
+cta: ''
 tech:
   - Gatsby
   - GraphQL

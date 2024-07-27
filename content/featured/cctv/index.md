@@ -3,7 +3,7 @@ date: '1'
 title: 'CCTV Smart Surveillance'
 cover: './halcyon.png'
 github: ''
-external: 'https://halcyon-theme.netlify.com/'
+external: ''
 tech:
   - React
   - Javascript

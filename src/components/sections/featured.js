@@ -83,7 +83,13 @@ const StyledProject = styled.li`
     }
     .project-image {
       grid-column: 1 / 8;
-
+      .mini-web{
+        transition:0.2s;
+        width:100%;
+        height:353px;
+        border:none;
+        border-radius:9px;
+      }
       @media (max-width: 768px) {
         grid-column: 1 / -1;
       }
@@ -401,9 +407,11 @@ const Featured = () => {
                 </div>
 
                 <div className="project-image">
+                   
                   <a href={external ? external : github ? github : '#'}>
                     <GatsbyImage image={image} alt={title} className="img" />
                   </a>
+                    
                 </div>
               </StyledProject>
             );
