@@ -3,6 +3,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { navDelay, loaderDelay } from '@utils';
 import { usePrefersReducedMotion } from '@hooks';
+import { Link } from 'gatsby';
 
 const StyledHeroSection = styled.section`
   ${({ theme }) => theme.mixins.flexCenter};
@@ -75,13 +76,12 @@ const Hero = () => {
     </>
   );
   const five = (
-    <a
+    <Link
       className="email-link"
-      href="https://www.newline.co/courses/build-a-spotify-connected-app"
-      target="_blank"
-      rel="noreferrer">
-      Check out my course!
-    </a>
+      to="/articles"
+      >
+      Read Articles!
+    </Link>
   );
 
   const items = [one, two, three, four, five];

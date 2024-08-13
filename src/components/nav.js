@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled, { css } from 'styled-components';
@@ -184,7 +184,7 @@ const Nav = ({ isHome }) => {
   const Logo = (
     <div className="logo" tabIndex="-1">
       {isHome ? (
-        <a href="/" aria-label="home">
+        <a href="/im-hamza" aria-label="home">
           <div className="hex-container">
             <IconHex />
           </div>
@@ -193,7 +193,7 @@ const Nav = ({ isHome }) => {
           </div>
         </a>
       ) : (
-        <Link to="/" aria-label="home">
+        <Link to="/im-hamza" aria-label="home">
           <div className="hex-container">
             <IconHex />
           </div>
@@ -206,8 +206,8 @@ const Nav = ({ isHome }) => {
   );
 
   const ResumeLink = (
-    <a className="resume-button" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-      Resume
+    <a className="resume-button" href="#contact" rel="noopener noreferrer">
+      Contact Me!
     </a>
   );
 
@@ -217,19 +217,19 @@ const Nav = ({ isHome }) => {
         {prefersReducedMotion ? (
           <>
             {Logo}
-
-            <StyledLinks>
-              <ol>
-                {navLinks &&
-                  navLinks.map(({ url, name }, i) => (
-                    <li key={i}>
-                      <Link to={url}>{name}</Link>
-                    </li>
-                  ))}
-              </ol>
-              <div>{ResumeLink}</div>
-            </StyledLinks>
-
+            {isHome &&
+              <StyledLinks>
+                <ol>
+                  {navLinks &&
+                    navLinks.map(({ url, name }, i) => (
+                      <li key={i}>
+                        <Link to={url}>{name}</Link>
+                      </li>
+                    ))}
+                </ol>
+                <div>{ResumeLink}</div>
+              </StyledLinks>
+            }
             <Menu />
           </>
         ) : (
@@ -245,7 +245,7 @@ const Nav = ({ isHome }) => {
             <StyledLinks>
               <ol>
                 <TransitionGroup component={null}>
-                  {isMounted &&
+                  {isMounted && isHome &&
                     navLinks &&
                     navLinks.map(({ url, name }, i) => (
                       <CSSTransition key={i} classNames={fadeDownClass} timeout={timeout}>
@@ -287,3 +287,15 @@ Nav.propTypes = {
 };
 
 export default Nav;
+
+
+export const pageQuery = graphql`
+  query {
+    allMarkdownRemark(limit: 2000, filter: { frontmatter: { draft: { ne: true } } }) {
+      group(field: frontmatter___tags) {
+        fieldValue
+        totalCount
+      }
+    }
+  }
+`;
