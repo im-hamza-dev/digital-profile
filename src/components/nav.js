@@ -206,7 +206,7 @@ const Nav = ({ isHome }) => {
   );
 
   const ResumeLink = (
-    <a className="resume-button" href="#contact" rel="noopener noreferrer">
+    <a className="resume-button" href="/im-hamza/#contact" rel="noopener noreferrer">
       Contact Me!
     </a>
   );

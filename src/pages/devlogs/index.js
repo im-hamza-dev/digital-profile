@@ -142,16 +142,16 @@ const StyledPost = styled.li`
   }
 `;
 
-const articlesPage = ({ location, data }) => {
+const DevlogsPage = ({ location, data }) => {
   const posts = data.allMarkdownRemark.edges;
 
   return (
     <Layout location={location}>
-      <Helmet title="articles" />
+      <Helmet title="Devlogs" />
 
       <StyledMainContainer>
         <header>
-          <h1 className="big-heading">Articles</h1>
+          <h1 className="big-heading">Devlogs</h1>
         </header>
 
         <StyledGrid>
@@ -179,7 +179,7 @@ const articlesPage = ({ location, data }) => {
                       <ul className="post__tags">
                         {tags.map((tag, i) => (
                           <li key={i}>
-                            <Link to={`/articles/tags/${kebabCase(tag)}/`} className="inline-link">
+                            <Link to={`/devlogs/tags/${kebabCase(tag)}/`} className="inline-link">
                               #{tag}
                             </Link>
                           </li>
@@ -196,12 +196,12 @@ const articlesPage = ({ location, data }) => {
   );
 };
 
-articlesPage.propTypes = {
+DevlogsPage.propTypes = {
   location: PropTypes.object.isRequired,
   data: PropTypes.object.isRequired,
 };
 
-export default articlesPage;
+export default DevlogsPage;
 
 export const pageQuery = graphql`
   {

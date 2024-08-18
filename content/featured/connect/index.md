@@ -17,4 +17,4 @@ tech:
 <b>AI Powered Meeting Platform </b>
 
 Revolutionize Your Meetings with AI: Instant Transcriptions and Summaries for Seamless Collaboration.
-Provide in-call chat platform. Integrated with Groq Whisper Model for transcription. Generate meeting-minutes via
+Provide in-call chat platform. Integrated with Groq Whisper Model for transcription. Generate meeting-minutes via GPT

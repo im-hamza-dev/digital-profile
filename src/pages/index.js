@@ -10,7 +10,7 @@ const StyledMainContainer = styled.main`
 
 const IndexPage = ({ location }) => {
   useEffect(()=>{
-    navigate('/articles')
+    navigate('/devlogs')
   })
  return (
   <div></div>
