@@ -3,7 +3,7 @@ title: React Environment Variables Undefined Issue
 description: Best Practice to declare env variables in react and fetch from utils 
 date: 2024-08-12
 draft: false
-slug: /articles/env-variables-react
+slug: /devlogs/env-variables-react
 tags:
   - React
 ---

@@ -78,9 +78,9 @@ const Hero = () => {
   const five = (
     <Link
       className="email-link"
-      to="/articles"
+      to="/devlogs"
       >
-      Read Articles!
+      Read Devlogs!
     </Link>
   );
 
