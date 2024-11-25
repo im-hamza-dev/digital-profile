@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
@@ -13,6 +13,21 @@ const StyledProjectsGrid = styled.ul`
   a {
     position: relative;
     z-index: 1;
+  }
+  .project-details {
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    background-color: #000000a3;
+    left: 0;
+    top: 0;
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    &.openProjectModal {
+      opacity: 1;
+      visibility: visible;
+    }
   }
 `;
 const StyledProject = styled.li`
@@ -83,12 +98,12 @@ const StyledProject = styled.li`
     }
     .project-image {
       grid-column: 1 / 8;
-      .mini-web{
-        transition:0.2s;
-        width:100%;
-        height:353px;
-        border:none;
-        border-radius:9px;
+      .mini-web {
+        transition: 0.2s;
+        width: 100%;
+        height: 353px;
+        border: none;
+        border-radius: 9px;
       }
       @media (max-width: 768px) {
         grid-column: 1 / -1;
@@ -309,6 +324,8 @@ const StyledProject = styled.li`
 `;
 
 const Featured = () => {
+  const [detailsModal, setDetailsModal] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
   const data = useStaticQuery(graphql`
     {
       featured: allMarkdownRemark(
@@ -406,16 +423,23 @@ const Featured = () => {
                   </div>
                 </div>
 
-                <div className="project-image">
-                   
+                <div
+                  className="project-image"
+                  onClick={() => {
+                    setSelectedProject(node);
+                    setDetailsModal(true);
+                  }}>
                   <a href={external ? external : github ? github : '#'}>
                     <GatsbyImage image={image} alt={title} className="img" />
                   </a>
-                    
                 </div>
               </StyledProject>
             );
           })}
+        <div className={`project-details ${detailsModal ? 'openProjectModal' : ''}`}>
+          {selectedProject?.frontmatter?.title}
+          <button onClick={() => setDetailsModal(false)}>Close</button>
+        </div>
       </StyledProjectsGrid>
     </section>
   );

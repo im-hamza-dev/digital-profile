@@ -2,7 +2,7 @@
 date: '2024-20-09'
 title: 'Colonbroom'
 github: 'https://github.com/im-hamza-dev/colonbroom-v2'
-external: 'https://colonbroom-v2.vercel.app/'
+external: 'https://precision-nutrition.vercel.app/'
 tech:
   - Gatsby
   - Javascript
