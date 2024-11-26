@@ -6,6 +6,7 @@ import sr from '@utils/sr';
 import { srConfig } from '@config';
 import { Icon } from '@components/icons';
 import { usePrefersReducedMotion } from '@hooks';
+import ImageCollage from '../collage-image/collage-image';
 
 const StyledProjectsGrid = styled.ul`
   ${({ theme }) => theme.mixins.resetList};
@@ -429,7 +430,7 @@ const Featured = () => {
                     setSelectedProject(node);
                     setDetailsModal(true);
                   }}>
-                  <a href={external ? external : github ? github : '#'}>
+                  <a>
                     <GatsbyImage image={image} alt={title} className="img" />
                   </a>
                 </div>
@@ -438,6 +439,7 @@ const Featured = () => {
           })}
         <div className={`project-details ${detailsModal ? 'openProjectModal' : ''}`}>
           {selectedProject?.frontmatter?.title}
+          {detailsModal && <ImageCollage folderPath={'cctv'} />}
           <button onClick={() => setDetailsModal(false)}>Close</button>
         </div>
       </StyledProjectsGrid>
