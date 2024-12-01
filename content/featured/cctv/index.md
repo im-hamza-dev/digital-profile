@@ -1,7 +1,7 @@
 ---
 date: '1'
 title: 'CCTV Smart Surveillance'
-cover: './halcyon.png'
+cover: './cctv.png'
 github: ''
 external: ''
 tech:

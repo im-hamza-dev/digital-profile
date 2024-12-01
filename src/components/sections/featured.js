@@ -25,9 +25,13 @@ const StyledProjectsGrid = styled.ul`
     position: fixed;
     opacity: 0;
     visibility: hidden;
+    overflow-y: auto;
     &.openProjectModal {
       opacity: 1;
       visibility: visible;
+    }
+    .details-wrapper {
+      margin: 100px;
     }
   }
 `;
@@ -438,9 +442,10 @@ const Featured = () => {
             );
           })}
         <div className={`project-details ${detailsModal ? 'openProjectModal' : ''}`}>
-          {selectedProject?.frontmatter?.title}
-          {detailsModal && <ImageCollage folderPath={'cctv'} />}
-          <button onClick={() => setDetailsModal(false)}>Close</button>
+          <div className="details-wrapper">
+            {detailsModal && <ImageCollage folderPath={'cctv'} />}
+            <button onClick={() => setDetailsModal(false)}>Close</button>
+          </div>
         </div>
       </StyledProjectsGrid>
     </section>
