@@ -4,12 +4,12 @@ title: 'WYSIWYG Editor - Custom'
 github: 'https://github.com/im-hamza-dev/colonbroom-v2'
 external: 'https://wysiwyg-quill-editor.vercel.app/'
 tech:
-  - Gatsby
+  - React
   - Javascript
-  - TailwindCSS
-  - Shopify
+  - SCSS
+  - QuillJs
 company: 'Upwork'
 showInProjects: true
 ---
 
-Build this Website for ColonBroom to market their product. Its a static website with interactive & responsive UI components compatible with all browsers. Quiz is integrated to retrieve user routine and body metrics informations which used in calculations of current and required calories to achieve the target weight. After getting target weight, user get recommended the product for weight loss. Products are integrated with Shopify.
+Developed a feature-rich markdown editor using Quill.js and React, incorporating a modern UI with a hoverable toolbar for an intuitive editing experience. Implemented search highlight functionality to enhance text navigation and improve user efficiency.

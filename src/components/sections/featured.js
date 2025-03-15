@@ -58,68 +58,9 @@ const StyledProject = styled.li`
     }
   }
 
-  &:nth-of-type(odd) {
-    .project-content {
-      grid-column: 7 / -1;
-      text-align: right;
-
-      @media (max-width: 1080px) {
-        grid-column: 5 / -1;
-      }
-      @media (max-width: 768px) {
-        grid-column: 1 / -1;
-        padding: 40px 40px 30px;
-        text-align: left;
-      }
-      @media (max-width: 480px) {
-        padding: 25px 25px 20px;
-      }
-    }
-    .project-tech-list {
-      justify-content: flex-end;
-
-      @media (max-width: 768px) {
-        justify-content: flex-start;
-      }
-
-      li {
-        margin: 0 0 5px 20px;
-
-        @media (max-width: 768px) {
-          margin: 0 10px 5px 0;
-        }
-      }
-    }
-    .project-links {
-      justify-content: flex-end;
-      margin-left: 0;
-      margin-right: -10px;
-
-      @media (max-width: 768px) {
-        justify-content: flex-start;
-        margin-left: -10px;
-        margin-right: 0;
-      }
-    }
-    .project-image {
-      grid-column: 1 / 8;
-      .mini-web {
-        transition: 0.2s;
-        width: 100%;
-        height: 353px;
-        border: none;
-        border-radius: 9px;
-      }
-      @media (max-width: 768px) {
-        grid-column: 1 / -1;
-      }
-    }
-  }
-
   .project-content {
     position: relative;
-    grid-column: 1 / 7;
-    grid-row: 1 / -1;
+    grid-column: 1 / 13;
 
     @media (max-width: 1080px) {
       grid-column: 1 / 9;
@@ -137,6 +78,12 @@ const StyledProject = styled.li`
 
     @media (max-width: 480px) {
       padding: 30px 25px 20px;
+    }
+
+    &:hover {
+      .project-title {
+        color: var(--green);
+      }
     }
   }
 
@@ -181,7 +128,7 @@ const StyledProject = styled.li`
     position: relative;
     z-index: 2;
     padding: 25px;
-    border-radius: var(--border-radius);
+    border-radius: 20px;
     background-color: var(--light-navy);
     color: var(--light-slate);
     font-size: var(--fz-lg);
@@ -383,7 +330,6 @@ const Featured = () => {
           featuredProjects.map(({ node }, i) => {
             const { frontmatter, html } = node;
             const { external, title, tech, github, cover, cta } = frontmatter;
-            const image = getImage(cover);
 
             return (
               <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
@@ -427,26 +373,9 @@ const Featured = () => {
                     </div>
                   </div>
                 </div>
-
-                <div
-                  className="project-image"
-                  onClick={() => {
-                    setSelectedProject(node);
-                    setDetailsModal(true);
-                  }}>
-                  <a>
-                    <GatsbyImage image={image} alt={title} className="img" />
-                  </a>
-                </div>
               </StyledProject>
             );
           })}
-        <div className={`project-details ${detailsModal ? 'openProjectModal' : ''}`}>
-          <div className="details-wrapper">
-            {detailsModal && <ImageCollage folderPath={'cctv'} />}
-            <button onClick={() => setDetailsModal(false)}>Close</button>
-          </div>
-        </div>
       </StyledProjectsGrid>
     </section>
   );

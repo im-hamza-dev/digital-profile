@@ -129,8 +129,9 @@ const GlobalStyle = createGlobalStyle`
     }
 
     &.fillHeight {
-      padding: 0 150px;
-
+      padding: 0;
+      object-fit: contain;
+      max-width: 100%;
       @media (max-width: 1080px) {
         padding: 0 100px;
       }
@@ -213,7 +214,7 @@ const GlobalStyle = createGlobalStyle`
       width: 300px;
       height: 1px;
       margin-left: 20px;
-      background-color: var(--lightest-navy);
+      background-color: var(--green);
 
       @media (max-width: 1080px) {
         width: 200px;

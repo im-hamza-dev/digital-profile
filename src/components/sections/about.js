@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { srConfig } from '@config';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
+import Hamza from '../../images/me.jpg';
 
 const StyledAboutSection = styled.section`
   max-width: 900px;
@@ -60,7 +61,7 @@ const StyledPic = styled.div`
     display: block;
     position: relative;
     width: 100%;
-    border-radius: var(--border-radius);
+    border-radius: 40px;
     background-color: var(--green);
 
     &:hover,
@@ -80,9 +81,8 @@ const StyledPic = styled.div`
 
     .img {
       position: relative;
-      border-radius: var(--border-radius);
+      border-radius: 30px;
       // mix-blend-mode: multiply;
-      filter: grayscale(50%) contrast(1);
       transition: var(--transition);
     }
 
@@ -109,6 +109,7 @@ const StyledPic = styled.div`
       top: 14px;
       left: 14px;
       z-index: -1;
+      border-radius: 30px;
     }
   }
 `;
@@ -131,6 +132,8 @@ const About = () => {
     'TypeScript',
     'Express',
     'React',
+    'Gatsby',
+    'Typescript',
     'MongoDB',
     'Angular',
   ];
@@ -143,25 +146,24 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              I'm a Senior Software Engineer with 4 years of expertise in designing and developing
-              web applications using JavaScript, React, Angular, Express and Node. I possess
-              excellent communication and presentation skills and am well-versed in requirement
-              gathering, and estimation. My energy and experience are always dedicated to building
-              efficient and impactful web applications while ensuring cross-browser compatibility
-              and performance optimization.
+              I’m Hamza, a Senior Software Engineer, Tech Entrepreneur, and Problem Solver with 5+
+              years of hands-on experience.
+              <br />
+              Started as a freelancer, crafting software from the ground up, and over the years,
+              I’ve evolved into leading Scrum-Stack—a software agency specializing in AI-driven
+              applications, SaaS solutions, and end-to-end software development.
             </p>
 
             <p>
-              Today, I’ve had the privilege of working for{' '}
-              <a href="https://shapepowered.com/">SHAPE</a> ( featured article in Forbes360 ),{' '}
-              <a href="https://www.iqralabs.com/">a start-up</a>, and{' '}
-              <a href="https://www.aerodyne.group/">a huge corporation</a>, My main focus these days
-              is building digital experiences at <a href="https://www.aerodyne.group/">Aerodyne</a>{' '}
-              for a variety of clients.
-            </p>
-
-            <p>
-              I'm also exploring several ideas to integrate with LLMs using MERN stack approach.
+              💡 My Expertise Includes:
+              <ol style={{ listStyle: 'none' }}>
+                <li>✔ AI-Powered SaaS Development </li>
+                <li>✔ Full-Stack Web & Mobile Applications</li>
+                <li>✔ Scalable Software Architectures </li>
+                <li>✔ End-to-End Product Management </li>
+                <li>✔ MVP Development & Rapid Prototyping </li>
+                <li>✔ AI Chatbots & RAG-Based AI Solutions</li>
+              </ol>{' '}
             </p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>
@@ -176,8 +178,7 @@ const About = () => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/me.jpg"
-              width={500}
+              src={'../../images/me.jpg'}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}
               alt="Headshot"

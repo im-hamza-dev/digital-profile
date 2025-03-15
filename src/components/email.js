@@ -9,6 +9,7 @@ const StyledLinkWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   position: relative;
+  background-color: var(--navy);
 
   &:after {
     content: '';

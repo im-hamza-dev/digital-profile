@@ -12,7 +12,7 @@ const StyledSocialList = styled.ul`
   margin: 0;
   padding: 0;
   list-style: none;
-
+  background-color: var(--navy);
   &:after {
     content: '';
     display: block;

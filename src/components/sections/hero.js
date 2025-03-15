@@ -9,8 +9,8 @@ const StyledHeroSection = styled.section`
   ${({ theme }) => theme.mixins.flexCenter};
   flex-direction: column;
   align-items: flex-start;
-  min-height: 100vh;
-  height: 100vh;
+  min-height: 80vh;
+  height: 80vh;
   padding: 0;
 
   @media (max-height: 700px) and (min-width: 700px), (max-width: 360px) {
@@ -60,26 +60,19 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-  const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Hamza Iqbal.</h2>;
-  const three = <h3 className="big-heading">I build things for the web.</h3>;
+  const one = <h1>🚀 Hi, my name is</h1>;
+  const two = <h2 className="big-heading">Hamza.</h2>;
+  const three = <h3 className="big-heading">I Build AI-Powered, Scalable Digital Solutions.</h3>;
   const four = (
     <>
       <p>
-        I’m a software engineer specializing in building exceptional digital experiences. Currently,
-        I’m focused on building accessible, human-centered products at{' '}
-        <a href="https://aerodyne.group" target="_blank" rel="noreferrer">
-          Aerodyne
-        </a>
-        .
+        I engineer solutions—AI-driven SaaS platforms, custom software products, and
+        enterprise-grade applications that scale with your business 💡
       </p>
     </>
   );
   const five = (
-    <Link
-      className="email-link"
-      to="/devlogs"
-      >
+    <Link className="email-link" to="/devlogs">
       Read Devlogs!
     </Link>
   );
