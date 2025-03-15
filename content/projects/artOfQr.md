@@ -2,7 +2,7 @@
 date: '2024-03-10'
 title: 'Art Of QR'
 github: 'https://github.com/im-hamza-dev/art-of-qr'
-external: 'https://art-of-qr.vercel.app/'
+external: 'https://artofqr.com'
 tech:
   - React
   - Javascript

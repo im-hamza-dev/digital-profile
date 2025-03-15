@@ -206,9 +206,14 @@ const Nav = ({ isHome }) => {
   );
 
   const ResumeLink = (
-    <a className="resume-button" href="/#contact" rel="noopener noreferrer">
-      Contact Me!
-    </a>
+    <>
+      <a className="resume-button" href="/#contact" rel="noopener noreferrer">
+        Contact Me!
+      </a>
+      <a href="/resume.pdf" className="resume-button">
+        Resume
+      </a>
+    </>
   );
 
   return (
@@ -217,7 +222,7 @@ const Nav = ({ isHome }) => {
         {prefersReducedMotion ? (
           <>
             {Logo}
-            {isHome &&
+            {isHome && (
               <StyledLinks>
                 <ol>
                   {navLinks &&
@@ -229,7 +234,7 @@ const Nav = ({ isHome }) => {
                 </ol>
                 <div>{ResumeLink}</div>
               </StyledLinks>
-            }
+            )}
             <Menu />
           </>
         ) : (
@@ -245,7 +250,8 @@ const Nav = ({ isHome }) => {
             <StyledLinks>
               <ol>
                 <TransitionGroup component={null}>
-                  {isMounted && isHome &&
+                  {isMounted &&
+                    isHome &&
                     navLinks &&
                     navLinks.map(({ url, name }, i) => (
                       <CSSTransition key={i} classNames={fadeDownClass} timeout={timeout}>
@@ -287,7 +293,6 @@ Nav.propTypes = {
 };
 
 export default Nav;
-
 
 export const pageQuery = graphql`
   query {
